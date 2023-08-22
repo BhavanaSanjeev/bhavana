@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    transition: all 0.2s ease-in;
+}
+
+.myHeader{
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+    
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+}
+
+.innerHeader{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.innerHeader>span{
+    cursor: pointer;
+}
+
+.rightSection{
+    width: 50%;
+height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rightSection>span{
+    cursor: pointer;
+}
+
+.myMain{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .myMain>span{
+    font-size: 32px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.myMain>button{
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: violet;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.myMain>button:hover{
+    background-color: rgb(red, green, blue);
+    color: white;
+    box-shadow: 3px 4px 4px 5px #a1a1a1;
+
+} */
+
+
+.myDiv{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.green{
+    background: green;
+}
+
+.blue{
+    background: blue;
+}
+
+#FirstDiv{
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    .rightSection{
+        display: none;
+    }
+
+    .innerHeader{
+        justify-content: center;
+    }
+
+    .myMain{
+        flex-direction: column;
+        justify-content: center;
+        gap: 22px;
+    }
+    
+}
+
+
